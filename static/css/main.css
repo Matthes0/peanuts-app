@@ -1,0 +1,23 @@
+nav {
+width: 100vw;
+height: 6vh;
+background-color: #3E485C;
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: flex-start;
+}
+a {
+color: #DDD;
+text-decoration: none;
+padding: 10px 25px;
+font-size: 20px;
+transition: 0.3s;
+}
+* {
+margin: 0;
+padding: 0;
+}
+a:hover {
+color: #A4BFF5;
+}

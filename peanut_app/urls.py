@@ -26,5 +26,6 @@ urlpatterns = [
     #dota_roles sites
     path('dota_roles/', include('dota_roles.urls')),
     # users sites
-    path('users/', include('users.urls')),
+    #path('users/', include('users.urls')),
+    
 ]
