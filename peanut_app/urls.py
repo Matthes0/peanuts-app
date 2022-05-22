@@ -22,4 +22,5 @@ urlpatterns = [
     #death_counter sites
     path('death_counter/', include('death_counter.urls')),
     #dota_roles sites
+    path('dota_roles/', include('dota_roles.urls')),
 ]
