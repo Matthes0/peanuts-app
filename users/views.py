@@ -1,7 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 
 
-def index(request):
-    return HttpResponse("user page")
+def home(request):
+    return render(request, 'users/home.html')
 # Create your views here.

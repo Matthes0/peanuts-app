@@ -19,6 +19,8 @@ from django.urls import include, path
 urlpatterns = [
     #admin site
     path('admin/', admin.site.urls),
+    #default site
+    path('', include('users.urls')),
     #death_counter sites
     path('death_counter/', include('death_counter.urls')),
     #dota_roles sites
