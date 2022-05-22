@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
-def index(request):
-    return HttpResponse("Death counter")
 # Create your views here.
+def home(request):
+    return render(request, 'death_counter/stats.html')
