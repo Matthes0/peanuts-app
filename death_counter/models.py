@@ -10,3 +10,4 @@ class Deaths(models.Model):
     game = models.ForeignKey(Game, on_delete=models.CASCADE)
     boss_name = models.ForeignKey(Boss, on_delete=models.CASCADE)
     deaths = models.IntegerField(default=0)
+    
