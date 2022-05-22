@@ -6,4 +6,3 @@ class Game(models.Model):
 class Boss(models.Model):
     boss_name = models.CharField(max_length=200)
     game = models.ForeignKey(Game, on_delete=models.CASCADE)
-    
