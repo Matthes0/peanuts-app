@@ -1,5 +1,5 @@
 {% load static %}
-
+<!--template for all pages-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,7 +12,10 @@
 </head>
 <body>
 {% include 'users/navbar.html' %}
-<h3>Home Page</h3>
+
+{% block content %}
+
+{% endblock %}
 
 </body>
 </html>

@@ -1,17 +1,19 @@
+{% extends 'users/home.html' %}
 {% load static %}
 
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Death Counter</title>
-    <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
-</head>
-<body>
-{% include 'users/navbar.html' %}
-<h3>stats page for death counter app</h3>
-</body>
-</html>
+{% block content %}
+<h2>Stats page for death counter app</h2>
+<h3>Games to choose statistics from:</h3>
+<table>
+    <tr>
+        <th>Game</th>
+        <th>View stats</th>
+    </tr>
+{% for game in games %}
+    <tr>
+        <td>{{game.game_name}}</td>
+        <td><a href="{% url 'game' game.id %}">View</a></td>
+    </tr>
+{% endfor %}
+</table>
+{% endblock content %}
