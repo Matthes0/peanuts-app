@@ -27,4 +27,4 @@ class Death(models.Model):
     player = models.ForeignKey(User, on_delete=models.CASCADE, default="")
     #return death count
     def __str__(self):
-        return self.deaths
+        return (str(self.boss_name) + " - " + str(self.player) + " - " + str(self.deaths))

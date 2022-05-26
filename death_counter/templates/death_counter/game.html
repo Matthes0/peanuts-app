@@ -1,2 +1,25 @@
-{% extends 'users/home.html' %}
+{% extends 'users/main.html' %}
 {% load static %}
+{% load name_filter %}
+{% block content %}
+<table>
+<tr>
+    <th>{{game.game_name}}</th>
+    {% for player in players %}
+    <th>{{player.username}}</th>
+    {% endfor players %}
+</tr>
+{% for boss in bosses %}
+<tr>
+<td>
+{{boss.boss_name}}
+</td>
+{% for player in players %}
+    <td>
+            {% deaths_boss deaths player boss %}
+    </td>
+{% endfor players %}
+</tr>
+{% endfor bosses %}
+</table>
+{% endblock content %}

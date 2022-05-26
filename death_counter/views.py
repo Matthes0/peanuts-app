@@ -8,5 +8,8 @@ def stats(request):
     return render(request, 'death_counter/stats.html', context)
 def game(request, pk):
     game = Game.objects.get(id=pk)
-    context = {}
-    return render(request, 'death_counter/game.html')
+    players = User.objects.all()
+    bosses = Boss.objects.filter(game=game)
+    deaths = Death.objects.filter(game=game)
+    context = {'game':game, 'players':players, 'deaths':deaths, 'bosses':bosses}
+    return render(request, 'death_counter/game.html', context)

@@ -1,3 +1,7 @@
+* {
+margin: 0;
+padding: 0;
+}
 nav {
 width: 100vw;
 height: 6vh;
@@ -7,20 +11,23 @@ justify-content: center;
 align-items: center;
 justify-content: flex-start;
 }
+tr {
+height: 60px;
+}
 a {
 color: #DDD;
 text-decoration: none;
 padding: 10px 25px;
 font-size: 20px;
 transition: 0.3s;
+margin: 10px;
 }
 td a {
+border: 2px solid #3E62A8;
+border-radius: 4px;
 background-color: #3E62A8;
 }
-* {
-margin: 0;
-padding: 0;
-}
+
 a:hover {
 color: #A4BFF5;
 }
