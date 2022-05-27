@@ -2,6 +2,7 @@
 margin: 0;
 padding: 0;
 }
+
 nav {
 width: 100vw;
 height: 6vh;
@@ -11,15 +12,17 @@ justify-content: center;
 align-items: center;
 justify-content: flex-start;
 }
+
 table,th, td {
 border: 1px solid black;
 border-collapse: collapse;
 padding: 10px 15px;
 }
-}
+
 tr {
 height: 60px;
 }
+
 a {
 color: #DDD;
 text-decoration: none;
@@ -28,6 +31,7 @@ font-size: 20px;
 transition: 0.3s;
 margin: 10px;
 }
+
 td a {
 border: 2px solid #3E62A8;
 border-radius: 4px;
