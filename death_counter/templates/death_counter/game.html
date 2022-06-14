@@ -21,5 +21,11 @@
 {% endfor players %}
 </tr>
 {% endfor bosses %}
+<tr>
+    <th><a href="{% url 'game_boss' game.id %}">Add Boss</a></th>
+    {% for player in players %}
+    <th><a href="{% url 'death_form' game.id player.id %}">Update</a></th>
+    {% endfor players %}
+</tr>
 </table>
 {% endblock content %}
