@@ -3,6 +3,12 @@
 {% block content %}
 <form action="" method="POST">
   {% csrf_token %}
-
+  {{form.game}}
+  <p>Boss name</p>
+  {{form.boss_name}}
+  <p>Deaths</p>
+  {{form.deaths}}
+  {{form.player}}
+  <input type="submit" name="Submit" id="">
 </form>
 {% endblock content %}

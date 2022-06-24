@@ -3,6 +3,9 @@
 {% block content %}
 <form action="" method="POST">
   {% csrf_token %}
-
+  {{form.game}}
+  <p>Boss name</p>
+  {{form.boss_name}}
+  <input type="submit" value="Submit">
 </form>
 {% endblock content %}
